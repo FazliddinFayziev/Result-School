@@ -1,0 +1,88 @@
+.preloader {
+    background: #000 url(../img/editor-1.3s-44px.gif) no-repeat center center;
+    background-size: 5%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+  }
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Montserrat";
+}
+.form {
+    height: 100vh;
+    width: 100%;
+    background: url(../img/call.jpg);
+    mask-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.form-container {
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba( 255, 255, 255, 0 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 18.5px );
+    -webkit-backdrop-filter: blur( 18.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.form-container input {
+    outline: inset 2px red;
+}
+.form-container textarea {
+    outline: inset 2px red;
+}
+
+.form-container img {
+    width: 85px;
+    height: 70px;
+}
+.form-container input,
+.form-container textarea {
+    width: 100%;
+    padding: 2px;
+    font-size: 18px;
+    border: 1px solid rgba(128, 128, 128, 0.199);
+    margin-top: 5px;
+}
+textarea {
+    resize: vertical;
+}
+#btn[type="submit"] {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 20px;
+    font-size: 24px;
+    border-radius: 8px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    background-color: rgb(243, 13, 13);
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: .3s ease background-color;
+}
+#btn[type="submit"]:hover {
+    background-color: rgb(6, 255, 89);
+}
+
+
+
+
+
+
+
+

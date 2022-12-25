@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img_1/dark-logo.png">
+    <link rel="stylesheet" href="./css/call.css">
+    <title>RESULT CALL</title>
+</head>
+
+<body>
+    <div class="preloader"></div>
+    <div class="form">
+        <form class="form-container" action="" onsubmit=" return sendtelegram()">
+            <img src="./img_1/dark-logo.png">
+            <input type="text" name="name" id="name" placeholder="Your name" required autocomplete="off">
+            <input type="number" name="number" id="number" placeholder="Your phone number" required autocomplete="off"> <br> <br>
+            <textarea name="message" id="message" cols="45" rows="10" placeholder="Message" required></textarea> <br> <br>
+            <input type="submit" value="Call me" id="btn">
+            Please wait our contact <b> Thank you!</b><span id="result"></span>                  
+        </form>
+    </div>
+    <script src="./js/call.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        setTimeout(function(){
+            $('.preloader').fadeToggle();
+        }, 1500);
+    </script>
+</body>
+
+</html>
